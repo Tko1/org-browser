@@ -5,3 +5,59 @@
    to this unique note taking program,  unlike emacs as a whole which is connected
    mostly to programmers.
 
+* Tasks
+** Goal List 
+*** TODO Create basic emacs-esque editor                         :emacs:goal:
+** SCHEDULED: <2018-12-07 Fri> Friday
+*** TODO [[*Create basic emacs-esque editor][Create basic emacs-esque editor]]                         :emacs:goal:
+**** TODO Create name 
+     - 
+       Emacs, Clojure, cool,  fire, ice, lightning, wind, earth
+       Icedit 
+**** TODO Backend 
+***** TODO Create buffers
+****** TODO Commands 
+******* TODO Insert text
+****** TODO Data
+***** TODO Input
+      Input is a langauge. Syllables combine into words, words into sentences, 
+      sentences paragraphs... the point is, this combine as such.  Our syllables
+      are just the letters, our sentences should be lispy too.  Hmmm .. how to 
+      determine beginning and endings of words?
+      >cd
+      command []
+      >m
+      command move
+      >backspace
+      command 
+      >q 
+      
+      >c 
+      command 
+      >l
+      [last : ls , lab : lb , lost : lo] (With the letters you need to press next 
+      highlighted, and the letters you don't need to press because it can be assumed
+      will be red]
+
+      >a
+      command (last 
+      >c
+      [command : cd, commands : cs]
+      >s
+      command (last commands)
+      
+      cd cl cd l cs   (call (last commands))
+
+      i ' cat 
+
+      
+
+      >:)
+****** Example test commands to study to come up with a proper input language
+******* Replace all letters with 'a'
+******** forall letter in buffer,  replace letter ref,'a'
+         (map! (current-buffer
+****** TODO Could studying forth perhaps help in coming up with a concise language?
+       >
+**** TODO Frontend
+*** TODO 

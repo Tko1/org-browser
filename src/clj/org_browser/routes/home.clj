@@ -1,17 +1,17 @@
 (ns org-browser.routes.home
   (:require [org-browser.layout :as layout]
+            [org-browser.db.core :as db]
             [compojure.core :refer [defroutes GET]]
             [ring.util.http-response :as response]
             [clojure.java.io :as io]))
 
 (defn home-page []
-  (layout/render
-    "home.html" {:docs (-> "docs/docs.md" io/resource slurp)}))
-
-(defn about-page []
-  (layout/render "about.html"))
+  (layout/render "home.html"))
 
 (defroutes home-routes
-  (GET "/" [] (home-page))
-  (GET "/about" [] (about-page)))
+  (GET "/" []
+       (home-page))
+  (GET "/docs" []
+       (-> (response/ok (-> "docs/docs.md" io/resource slurp))
+           (response/header "Content-Type" "text/plain; charset=utf-8"))))
 
