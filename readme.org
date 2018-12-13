@@ -1,0 +1,8 @@
+* Org-Browser
+** Description
+   An attempt to create an org-mode-ish clone in the browser to make it accessible
+   to the average person, especially since the average person can actually relate 
+   to this unique note taking program,  unlike emacs as a whole which is connected
+   mostly to programmers.
+
+   
