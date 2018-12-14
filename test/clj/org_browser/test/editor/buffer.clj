@@ -20,7 +20,23 @@
                (sut/insert-buffer "cat")
                (sut/insert-buffer ""))
            { :types [:Buffer] :text "cat"})))
-  
+
+(t/deftest delete-region-test
+  (t/is (= (-> (sut/new-buffer)
+               (sut/insert-buffer "cat")
+               (sut/delete-region 0 2))
+           { :types [:Buffer] :text "t"})))
+
+(t/deftest twice--delete-region-test
+  (t/is (= (-> (sut/new-buffer)
+               (sut/insert-buffer "cat")
+               (sut/insert-buffer "dog")
+               (sut/delete-region 0 2)
+               (sut/delete-region 2 3))
+           { :types [:Buffer] :text "tdg"})))
+
+(t/deftest )
+
 
 
 (t/deftest buffer-test
