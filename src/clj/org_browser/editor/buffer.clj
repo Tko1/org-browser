@@ -5,6 +5,6 @@
   {:types [:Buffer] :text ""})
 
 (defn insert-buffer [buffer text]
-  (assoc buffer :text text))
+  (update buffer :text #(str % text)))
 
 
