@@ -35,7 +35,6 @@
                (sut/delete-region 2 3))
            { :types [:Buffer] :text "tdg"})))
 
-(t/deftest )
 
 
 

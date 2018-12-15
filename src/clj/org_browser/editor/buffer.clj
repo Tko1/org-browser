@@ -1,5 +1,4 @@
-(ns org-browser.editor.buffer
-  (:require '[clojure.test :refer :all]))
+(ns org-browser.editor.buffer)
 
 (defn new-buffer []
   {:types [:Buffer] :text ""})

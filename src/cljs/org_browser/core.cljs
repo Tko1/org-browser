@@ -42,9 +42,15 @@
     [:div.col-md-12
      [:img {:src "/img/warning_clojure.png"}]]]])
 
+(defn editor-on-change [event]
+  (js/alert (-> event .-target .-value)))
 (defn home-page []
   [:div.container
-   [:textarea ]
+   [:textarea
+    {:on-change
+     (fn [e]
+       ;;(rf/dispatch [:input ])
+       (js/alert (-> e .-target .-value)))}]
    (when-let [docs @(rf/subscribe [:docs])]
      [:div.row>div.col-sm-12
       [:div {:dangerouslySetInnerHTML
