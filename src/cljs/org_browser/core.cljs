@@ -44,6 +44,7 @@
 
 (defn editor-on-change [event]
   (js/alert (-> event .-target .-value)))
+;; Test commit
 (defn home-page []
   [:div.container
    [:textarea
