@@ -35,7 +35,7 @@
       [b/Nav {:class-name "mr-auto" :navbar true}
        [nav-link "#/" "Home" :home]
        [nav-link "#/about" "About" :about]]]]))
-
+;;Test commit on new computer
 (defn about-page []
   [:div.container
    [:div.row
