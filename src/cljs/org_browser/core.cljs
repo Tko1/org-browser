@@ -37,6 +37,7 @@
        [nav-link "#/about" "About" :about]]]]))
 ;;Test commit on new computer
 ;;Test on ssh pass
+;;Test2 on ssh pass
 (defn about-page []
   [:div.container
    [:div.row
